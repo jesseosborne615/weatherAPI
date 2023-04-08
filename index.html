@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Weather API</h1></header>
+    <div>
+        <form action="/action_page.php">
+  <label for="city">Search For a City:</label><br>
+  <input type="text" id="city" name="city" placeholder="city"><br>
+  <input type="button" id="searchButton" value="Search">
+</form> 
+    </div>
+
+    <div>
+        <section>
+            <h2 id="city-name"></h2>
+            <img src="" alt="weatherIcon">
+            <p id="temp"></p>
+            <p id="humidity"></p> 
+            <p id="windSpeed"></p> 
+        </section>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

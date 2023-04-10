@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <header><h1>Weather API</h1></header>
-    <div>
-        <form action="/action_page.php">
-  <label for="city">Search For a City:</label><br>
-  <input type="text" id="city" name="city" placeholder="city"><br>
-  <input type="button" id="searchButton" value="Search">
-</form> 
-    </div>
-
-    <div>
-        <section>
-            <h2 id="city-name"></h2>
-            
-            <p id="temp"></p>
-            <p id="humidity"></p> 
-            <p id="windSpeed"></p> 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"
+      integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <section class="header">Weather Watch</section>
+      <section class="content-2">
+        <h3 class="five-day-name"></h3>
+      </section>
+      <section class="content">
+        <section class="city-search">
+          <form action="#">
+            <label for="city"></label>
+            <input
+              type="text"
+              placeholder="Enter City Name"
+              id="city"
+              name="city"
+              autofocus
+              autocomplete="on"
+            />
+            <div class="form-btn">
+              <button type="submit" id="search">Search</button>
+              <button type="reset" id="clear">Clear</button>
+            </div>
+          </form>
+          <section class="curr-forecast"></section>
         </section>
-    </div>
-    
+      </section>
+      <section class="saved">
+        <ol class="save-list"></ol>
+      </section>
+      <section class="footer">&copy; weather watch 2022</section>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
